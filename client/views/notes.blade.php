@@ -1,5 +1,5 @@
-@extends ( 'master' )
+@extends ( 'page' )
 
-@section ( 'page' )
-    <h1>Notes</h1>
+@section ( 'content' )
+    
 @endsection
