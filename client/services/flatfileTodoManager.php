@@ -8,13 +8,22 @@ class flatfileTodoManager implements todo\manager
     function __construct ( string $file, array $todos )
     {
         $this->file = $file;
-        $this->products = $products;
+        $this->todos = $todos;
     }
 
     function add ( todo $todo )
     {
         $this->todos [ ] = $todo;
         $this->write ( );
+    }
+
+    function hasTodoWithDescription ( string $description ) : bool
+    {
+        foreach ( $this->todos as $todo )
+            if ( $todo->description === $description )
+                return true;
+        
+        return false;
     }
 
     private function write ( )

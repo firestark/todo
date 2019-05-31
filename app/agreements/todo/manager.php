@@ -4,7 +4,7 @@ namespace todo;
 
 interface manager
 {
-    function hasTodoWithDescription ( \todo $todo ) : bool;
+    function hasTodoWithDescription ( string $description ) : bool;
 
     function add ( \todo $todo );
 }
