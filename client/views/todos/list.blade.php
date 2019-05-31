@@ -2,7 +2,7 @@
 
 @section ( 'content' )
     
-    <ul class="mdc-list">
+    <ul class="mdc-list mdc-list--linked">
         @foreach ( $todos as $todo )
             <li class="mdc-list-item">
                 <a href="/{{ $todo->id }}">

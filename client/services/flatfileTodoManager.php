@@ -13,8 +13,13 @@ class flatfileTodoManager implements todo\manager
 
     function add ( todo $todo )
     {
-        $this->todos [ ] = $todo;
+        $this->todos [ $todo->id ] = $todo;
         $this->write ( );
+    }
+
+    function has ( todo $todo ) : bool
+    {
+        return isset ( $this->todos [ $todo->id ] );
     }
 
     function hasTodoWithDescription ( string $description ) : bool
@@ -31,14 +36,13 @@ class flatfileTodoManager implements todo\manager
         return $this->todos;
     }
 
+    function find ( todo $todo ) : todo
+    {
+        return $this->todos [ $todo->id ];
+    }
+
     private function write ( )
 	{
 		file_put_contents ( $this->file, serialize ( $this->todos ) );
-    }
-
-    private function check ( todo $todo )
-    {
-        if ( ! isset ( $this->todos [ $todo->id ] ) )
-            throw new \exception ( "A todo with id: {$todo->id} does not exist." );
     }
 }
