@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="/resources/styles/bundle.css">
     <link rel="icon" href="/favicon.png">
     <meta name="theme-color" content="#fff">
+
+    @yield ( 'style' )
 </head>
 
 <body class="mdc-typography">
