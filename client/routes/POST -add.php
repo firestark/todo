@@ -2,5 +2,5 @@
 
 route::post ( '/add', function ( )
 {
-    dd ( input::all ( ) );
+    return app::fulfill ( 'i want to add a todo' );
 } );
