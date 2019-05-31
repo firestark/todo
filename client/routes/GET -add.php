@@ -2,5 +2,5 @@
 
 route::get ( '/add', function ( )
 {
-    return view::make ( 'notes.add' );
+    return view::make ( 'todos.add' );
 } );

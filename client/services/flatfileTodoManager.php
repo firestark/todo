@@ -26,6 +26,11 @@ class flatfileTodoManager implements todo\manager
         return false;
     }
 
+    function all ( ) : array
+    {
+        return $this->todos;
+    }
+
     private function write ( )
 	{
 		file_put_contents ( $this->file, serialize ( $this->todos ) );

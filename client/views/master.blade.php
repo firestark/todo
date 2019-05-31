@@ -44,7 +44,7 @@
         @endif
     </script>
     
-    @yield ( 'mdc-js' )  
+    @yield ( 'js' )  
 </body>
 
 </html>
