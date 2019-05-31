@@ -2,5 +2,5 @@
 
 route::get ( '/', function ( )
 {
-    return view::make ( 'notes' );
+    return view::make ( 'notes.list' );
 } );
