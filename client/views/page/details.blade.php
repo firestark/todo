@@ -24,11 +24,6 @@
                     
                 </section>
             </div>
-            <div class="mdc-top-app-bar__row">
-                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start" style="padding: 0; align-items: flex-end;">
-                    @yield ( 'tab-bar' )
-                </section>
-            </div>
         </header>
 
         <div id="page">            

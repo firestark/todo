@@ -19,11 +19,6 @@
 
                 </section>
             </div>
-            <div class="mdc-top-app-bar__row">
-                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start" style="padding: 0; align-items: flex-end;">
-                    @yield ( 'tab-bar' )
-                </section>
-            </div>
         </header>
 
         <div id="page">
@@ -113,13 +108,13 @@
                                 <span class="mdc-tab__ripple"></span>
                             </a>
 
-                            <a href="{{ request::uri ( ) === '/apps/' ? '#' : '/apps/' }}" class="mdc-tab mdc-tab--stacked {{ ( substr ( request::uri ( ), 0, 6 ) === '/apps/' ) ? 'mdc-tab--active' : '' }}" role="tab" aria-selected="true" tabindex="0">
+                            <a href="{{ request::uri ( ) === '/completed' ? '#' : '/completed' }}" class="mdc-tab mdc-tab--stacked {{ ( request::uri ( ) === '/completed' ) ? 'mdc-tab--active' : '' }}" role="tab" aria-selected="true" tabindex="0">
                                 <span class="mdc-tab__content">
                                     <span class="mdc-tab__icon" aria-hidden="true">
-                                        @if (  substr ( request::uri ( ), 0, 6 ) === '/apps/' )
+                                        @if (  request::uri ( ) === '/completed' )
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                 <path d="M0 0h24v24H0z" fill="none"/>
-                                                <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                                             </svg>
                                         @else
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -128,9 +123,9 @@
                                             </svg>
                                         @endif
                                     </span>
-                                    <span class="mdc-tab__text-label">Apps</span>
+                                    <span class="mdc-tab__text-label">Completed</span>
                                 </span>
-                                <span class="mdc-tab-indicator {{ ( substr ( request::uri ( ), 0, 6 ) === '/apps/' ) ? 'mdc-tab-indicator--active' : '' }}">
+                                <span class="mdc-tab-indicator {{ ( request::uri ( ) === '/completed' ) ? 'mdc-tab-indicator--active' : '' }}">
                                     <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
                                 </span>
                                 <span class="mdc-tab__ripple"></span>
