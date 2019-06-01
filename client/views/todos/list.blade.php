@@ -19,7 +19,9 @@
         @endforeach
     </ul>
     
-    @include ( 'partials.link.fab', [ 'action' => 'add', 'link' => '/add' ] )
+    @if ( request::uri ( ) === '/' )
+        @include ( 'partials.link.fab', [ 'action' => 'add', 'link' => '/add' ] )
+    @endif
 @endsection
 
 @section ( 'js' )
