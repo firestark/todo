@@ -13,7 +13,6 @@ $app->instance ( 'request', firestark\request::capture ( ) );
 $app->instance ( 'response', new http\response\factory ( firestark\response::class ) );
 $app->instance ( 'redirector', new firestark\redirector ( BASEURL, $app [ 'session' ]->get ( 'uri', '/' ) ) );
 $app->instance ( 'router', new firestark\router );
-$app [ 'session' ]->flash ( 'uri', $app [ 'request' ]->uri );
 $app->instance ( 'view', 
     new firestark\view ( 
         $app [ 'response' ], 
@@ -34,3 +33,4 @@ $kernel = new firestark\kernel ( $dispatcher );
 $response = $kernel->handle ( $app [ 'request' ] );
 
 $response->send ( );
+$app [ 'session' ]->flash ( 'uri', $app [ 'request' ]->uri );
