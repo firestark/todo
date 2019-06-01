@@ -14,6 +14,10 @@ interface manager
 
     function all ( ) : array;
 
+    function completed ( ) : array;
+
+    function pending ( ) : array;
+
     function find ( todo $todo ) : todo;
 
     function remove ( todo $todo );

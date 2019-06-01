@@ -36,6 +36,24 @@ class flatfileTodoManager implements todo\manager
         return $this->todos;
     }
 
+    function completed ( ) : array
+    {
+        foreach ( $this->todos as $todo )
+            if ( $todo->completed )
+                $completed [ ] = $todo;
+        
+        return $completed ?? [ ];
+    }
+
+    function pending ( ) : array
+    {
+        foreach ( $this->todos as $todo )
+            if ( ! $todo->completed )
+                $pending [ ] = $todo;
+        
+        return $pending ?? [ ];
+    }
+
     function find ( todo $todo ) : todo
     {
         return $this->todos [ $todo->id ];
