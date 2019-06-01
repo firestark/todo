@@ -3904,7 +3904,11 @@ section#login {
 */
 @media (min-width: 481px) and (max-width: 767px) {
   main {
-    padding: 0 0 80px; }
+    padding: 0; }
+  #page {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-row-gap: 44px; }
   #rail-navigation {
     display: none; }
   .mdc-fab {
@@ -3921,7 +3925,11 @@ section#login {
   */
 @media (min-width: 320px) and (max-width: 480px) {
   main {
-    padding: 0 0 80px; }
+    padding: 0; }
+  #page {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-row-gap: 44px; }
   #rail-navigation {
     display: none; }
   .mdc-fab {
@@ -3935,8 +3943,6 @@ section#login {
 .mdc-bottom-app-bar {
   color: black;
   display: flex;
-  position: fixed;
-  bottom: 0;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;

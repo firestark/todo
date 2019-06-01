@@ -35,9 +35,9 @@
             <main>
                 @yield ( 'content' )
             </main>
-        </div>
 
-        @yield ( 'bottom-app-bar' )
+            @yield ( 'bottom-app-bar' )
+        </div>
     </div>
 @endsection
 
