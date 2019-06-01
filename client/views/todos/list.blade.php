@@ -1,4 +1,4 @@
-@extends ( 'page' )
+@extends ( 'page.overview' )
 
 @section ( 'content' )
     
