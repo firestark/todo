@@ -447,8 +447,6 @@ body {
 }
 
 #page {
-    display: grid;
-    grid-template-columns: 168px 1fr;
     box-sizing: border-box;
     min-height: 0;
 }
@@ -734,10 +732,6 @@ section#login {
         display: none;
     }
 
-    #page {
-        grid-template-columns: 1fr;
-    }
-
     .mdc-fab {
         bottom: 72px;
         right: 16px;
@@ -765,10 +759,6 @@ section#login {
     
     #rail-navigation {
         display: none;
-    }
-
-    #page {
-        grid-template-columns: 1fr;
     }
 
     .mdc-fab {
