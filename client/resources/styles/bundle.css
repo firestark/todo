@@ -3908,7 +3908,8 @@ section#login {
   #page {
     display: grid;
     grid-template-rows: 1fr auto;
-    grid-row-gap: 44px; }
+    grid-row-gap: 44px;
+    padding-top: 16px; }
   #rail-navigation {
     display: none; }
   .mdc-fab {
@@ -3929,7 +3930,8 @@ section#login {
   #page {
     display: grid;
     grid-template-rows: 1fr auto;
-    grid-row-gap: 44px; }
+    grid-row-gap: 44px;
+    padding-top: 16px; }
   #rail-navigation {
     display: none; }
   .mdc-fab {
