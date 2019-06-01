@@ -4,5 +4,5 @@ use function compact as with;
 
 status::matching ( 1001, function ( array $todos )
 {
-    return view::make ( 'todos.list', with ( 'todos' ) );
+    return view::make ( 'todos.list.pending', with ( 'todos' ) );
 } );
