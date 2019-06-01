@@ -1,12 +1,14 @@
 @extends ( 'page.overview' )
 
 @section ( 'content' )
-    
-    <ul class="mdc-list mdc-list--linked">
+    <ul class="mdc-list mdc-list--two-line mdc-list--linked">
         @foreach ( $todos as $todo )
             <li class="mdc-list-item">
-                <a href="/{{ $todo->id }}">
-                    {{ $todo->description }}
+                <a href="/{{ $todo->id }}" style="position: relative">
+                    <span class="mdc-list-item__text" style="width: 100%;">
+                        <span class="mdc-list-item__primary-text">{{ $todo->description }}</span>
+                        <span class="mdc-list-item__secondary-text">Created at {{  date ( 'M d, Y ', $todo->createdAt ) }}</span>
+                    </span>
                 </a>
 
                 <a href="/{{ $todo->id }}/remove" class="mdc-list-item__meta" aria-hidden="true">

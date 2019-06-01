@@ -1,1 +1,1 @@
-a:1:{s:13:"5cf1be9f1596d";O:4:"todo":2:{s:2:"id";s:13:"5cf1be9f1596d";s:11:"description";s:7:"My todo";}}
+a:2:{s:13:"5cf2ec091212e";O:4:"todo":4:{s:2:"id";s:13:"5cf2ec091212e";s:11:"description";s:7:"My todo";s:9:"createdAt";i:1559424009;s:9:"completed";b:0;}s:13:"5cf2f065df6de";O:4:"todo":4:{s:2:"id";s:13:"5cf2f065df6de";s:11:"description";s:17:"My completed todo";s:9:"createdAt";i:1559425125;s:9:"completed";b:1;}}
