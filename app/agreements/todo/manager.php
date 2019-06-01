@@ -17,4 +17,6 @@ interface manager
     function find ( todo $todo ) : todo;
 
     function remove ( todo $todo );
+
+    function complete ( todo $todo );
 }
