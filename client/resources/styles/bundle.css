@@ -3891,7 +3891,8 @@ section#login {
   #bottom-navigation .mdc-tab--active .mdc-tab__content {
     justify-content: space-around; }
   #bottom-navigation .mdc-tab--active .mdc-tab__icon {
-    padding-top: 8px; }
+    padding-top: 8px;
+    padding-bottom: 2px; }
   #bottom-navigation .mdc-tab--active .mdc-tab__icon,
   #bottom-navigation .mdc-tab--active .mdc-tab__text-label,
   #bottom-navigation .mdc-tab-indicator .mdc-tab-indicator__content--underline {
