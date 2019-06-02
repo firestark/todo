@@ -6,6 +6,7 @@ class session
 {
     public function __construct ( )
     {
+        session_name ( 'stark' );
         session_start ( );
         $this->initiliaze ( 'flash' );
         $this->initiliaze ( 'deprecated' );        
@@ -19,9 +20,21 @@ class session
             ( $_SESSION [ 'deprecated' ] [ $key ] ?? $default ) );
     }
 
+    public function getAndForget ( string $key, $default = null )
+    {
+        $value = $this->get ( $key, $default );
+        $this->unset ( $key );
+        return $value;
+    }
+
     public function set ( string $key, $value )
     {
         $_SESSION [ $key ] = $value;
+    }
+
+    public function unset ( string $key )
+    {
+        unset ( $_SESSION [ $key ] );
     }
 
     public function flash ( string $key, $value )
@@ -35,6 +48,11 @@ class session
             isset ( $_SESSION [ $key ] ) || 
             isset ( $_SESSION [ 'flash' ] [ $key ] ) || 
             isset ( $_SESSION [ 'deprecated' ] [ $key ] );
+    }
+
+    public function reflash ( )
+    {
+        $_SESSION [ 'flash' ] = array_merge ( $_SESSION [ 'flash' ], $_SESSION [ 'deprecated' ] );
     }
 
     private function deprecate ( )
