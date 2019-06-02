@@ -355,6 +355,9 @@
   --mdc-theme-text-hint-on-dark: rgba(255, 255, 255, 0.5);
   --mdc-theme-text-disabled-on-dark: rgba(255, 255, 255, 0.5);
   --mdc-theme-text-icon-on-dark: rgba(255, 255, 255, 0.5); }
+  :root[data-theme="light"] .mdc-list--linked.mdc-list--avatar-list a:nth-child(2) {
+    border-bottom: 1px solid #dbe1e7;
+    box-sizing: border-box; }
 
 /**
  * @license
@@ -584,6 +587,9 @@
     font-weight: 500; }
   :root[data-theme="dark"] .mdc-text-field input, :root[data-theme="dark"] .mdc-text-field textarea {
     background-color: var(--mdc-theme-surface); }
+  :root[data-theme="dark"] .mdc-list--linked.mdc-list--avatar-list a:nth-child(2) {
+    border-bottom: 1px solid #181617;
+    box-sizing: border-box; }
 
 .mdc-list {
   font-family: "Metropolis", sans-serif;
