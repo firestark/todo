@@ -331,7 +331,7 @@
     padding-right: 8px; }
 
 :root[data-theme="light"] {
-  --mdc-theme-primary: #EA4C62;
+  --mdc-theme-primary: #d81b60;
   --mdc-theme-secondary: #fff;
   --mdc-theme-background: #fff;
   --mdc-theme-surface: #fff;
@@ -554,7 +554,7 @@
     padding-right: 8px; }
 
 :root[data-theme="dark"] {
-  --mdc-theme-primary: #EA4C62;
+  --mdc-theme-primary: #d81b60;
   --mdc-theme-secondary: #fff;
   --mdc-theme-background: #1D1D1D;
   --mdc-theme-surface: #181617;
