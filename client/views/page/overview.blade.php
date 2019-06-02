@@ -123,7 +123,7 @@
                                             </svg>
                                         @endif
                                     </span>
-                                    <span class="mdc-tab__text-label">Completed</span>
+                                    <span class="mdc-tab__text-label">Done</span>
                                 </span>
                                 <span class="mdc-tab-indicator {{ ( request::uri ( ) === '/completed' ) ? 'mdc-tab-indicator--active' : '' }}">
                                     <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
