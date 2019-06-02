@@ -12,6 +12,8 @@ interface manager
 
     function add ( todo $todo );
 
+    function update ( todo $todo );
+
     function all ( ) : array;
 
     function completed ( ) : array;

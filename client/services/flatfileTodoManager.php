@@ -17,6 +17,12 @@ class flatfileTodoManager implements todo\manager
         $this->write ( );
     }
 
+    function update ( todo $todo )
+    {
+        $this->todos [ $todo->id ] = $todo;
+        $this->write ( );
+    }
+
     function has ( todo $todo ) : bool
     {
         return isset ( $this->todos [ $todo->id ] );
