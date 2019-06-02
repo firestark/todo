@@ -16,7 +16,7 @@
 
 
                 <a href="/{{ $todo->id }}" style="position: relative">
-                    <span class="mdc-list-item__text" style="width: 100%;">
+                    <span class="mdc-list-item__text" style="width: 100%; display: grid; padding-right: 16px;">
                         <span class="mdc-list-item__primary-text">{{ $todo->description }}</span>
                         <span class="mdc-list-item__secondary-text">Created at {{  date ( 'M d, Y ', $todo->createdAt ) }}</span>
                     </span>
