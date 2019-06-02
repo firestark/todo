@@ -78,7 +78,7 @@
                                                 </svg>
                                             @endif
                                         </span>
-                                        <span class="mdc-tab__text-label">Todos</span>
+                                        <span class="mdc-tab__text-label">Inbox</span>
                                     </span>
                                     <span class="mdc-tab-indicator {{ ( request::uri ( ) === '/' ) ? 'mdc-tab-indicator--active' : '' }}">
                                         <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
