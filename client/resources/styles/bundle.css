@@ -3864,6 +3864,11 @@ section#login {
 .mdc-tab-bar--top .mdc-tab-indicator .mdc-tab-indicator__content--underline {
   border-radius: 3px 3px 0 0; }
 
+.mdc-top-app-bar__title {
+  width: 100%;
+  font-size: 0.785rem;
+  text-align: center; }
+
 #bottom-navigation {
   display: none;
   background-color: var(--mdc-theme-primary);

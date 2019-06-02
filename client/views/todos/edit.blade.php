@@ -4,6 +4,10 @@
     @include ( 'partials.up-arrow', [ 'link' => input::get ( 'up', '/' ) ] )
 @endsection
 
+@section ( 'title' )
+    Created at {{  date ( 'M d, Y ', $todo->createdAt ) }}
+@endsection
+
 @section ( 'content' )
 
     <form method="POST" style="display: grid; height: 100%;">
