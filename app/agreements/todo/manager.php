@@ -23,4 +23,6 @@ interface manager
     function remove ( todo $todo );
 
     function complete ( todo $todo );
+
+    function uncomplete ( todo $todo );
 }
