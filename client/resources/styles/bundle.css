@@ -3868,7 +3868,8 @@ section#login {
 .mdc-top-app-bar__title {
   width: 100%;
   font-size: 0.785rem;
-  text-align: center; }
+  text-align: center;
+  color: var(--mdc-theme-text-secondary-on-background); }
 
 #bottom-navigation {
   display: none;
