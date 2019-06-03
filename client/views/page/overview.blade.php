@@ -14,7 +14,7 @@
 
                 <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">                
                     
-                    
+                    @yield ( 'top-app-bar--actions' )
                     {{-- @include ( 'partials.logout' ) --}}
 
                 </section>

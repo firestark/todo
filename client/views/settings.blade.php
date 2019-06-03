@@ -1,5 +1,9 @@
 @extends ( 'page.overview' )
 
-@section ( 'content' )
+@section ( 'top-app-bar--actions' )
     @include ( 'partials.theme-switcher' )
+@endsection
+
+@section ( 'content' )
+    
 @endsection
