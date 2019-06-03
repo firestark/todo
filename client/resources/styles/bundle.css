@@ -4233,7 +4233,8 @@ svg.mdc-button__icon {
 
 textarea {
   background: transparent;
-  color: var(--mdc-theme-on-background); }
+  color: var(--mdc-theme-on-background);
+  caret-color: var(--mdc-theme-primary); }
 
 .mdc-text-field:not(.mdc-text-field--disabled) + .mdc-text-field-helper-line .mdc-text-field-helper-text {
   color: var(--mdc-theme-text-secondary-on-light); }
@@ -4306,6 +4307,14 @@ input:-webkit-autofill:active {
 /* ---------------------------------------------------------
     Styling 
 --------------------------------------------------------- */
+*::selection {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--mdc-theme-primary); }
+
+*::-moz-selection {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--mdc-theme-primary); }
+
 ::-webkit-scrollbar {
   height: 16px;
   width: 16px;
