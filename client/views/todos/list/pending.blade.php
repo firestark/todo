@@ -1,7 +1,7 @@
 @extends ( 'page.overview' )
 
 @section ( 'content' )
-    <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list mdc-list--highlight mdc-list--linked">
+    <ul id="pending-task-list" class="mdc-list mdc-list--two-line mdc-list--avatar-list mdc-list--highlight mdc-list--linked">
         @foreach ( $todos as $todo )
             <li class="mdc-list-item">
                 <a href="/{{ $todo->id }}/complete" 
@@ -39,7 +39,7 @@
     @parent
     
     <script>
-        const list = mdc.list.MDCList.attachTo ( document.querySelector ( '.mdc-list' ) );
-        const listItemRipples = list.listElements.map ( ( listItemEl ) => mdc.ripple.MDCRipple.attachTo ( listItemEl ) );
+        const pendingTaskList = mdc.list.MDCList.attachTo ( document.getElementById ( 'pending-task-list' ) );
+        const pendingTaskListItemRipples = pendingTaskList.listElements.map ( ( listItemEl ) => mdc.ripple.MDCRipple.attachTo ( listItemEl ) );
     </script>
 @endsection
