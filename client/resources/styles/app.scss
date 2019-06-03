@@ -147,6 +147,7 @@ $mdc-typography-font-family: "Metropolis", unquote("sans-serif");
 @import "./themes/light.scss";
 @import "./themes/dark.scss";
 
+@import "@material/drawer/mdc-drawer";
 @import "@material/list/mdc-list";
 @import "@material/button/mdc-button";
 @import "@material/card/mdc-card";
@@ -155,6 +156,11 @@ $mdc-typography-font-family: "Metropolis", unquote("sans-serif");
 @import "@material/tab/mdc-tab";
 @import "@material/top-app-bar/mdc-top-app-bar";
 @import "@material/typography/mdc-typography";
+
+.mdc-drawer {
+    @include mdc-drawer-item-activated-icon-ink-color(#d81b60);
+    @include mdc-drawer-item-activated-text-ink-color(#d81b60)
+}
 
 
 .mdc-text-field {
@@ -440,7 +446,7 @@ body {
     height: 100vh;
     box-sizing: border-box;
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
     position: relative;
     z-index: 1;
 }
@@ -448,40 +454,8 @@ body {
 #page {
     box-sizing: border-box;
     min-height: 0;
-}
-
-#rail-navigation {
-    box-sizing: border-box;
-
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: grid;
-        grid-row-gap: 48px;
-        justify-items: center;
-
-        li {
-            svg {
-                width: 32px;
-                height: 32px;
-            }
-
-            a {
-                color: var(--mdc-theme-text-hint-on-background); 
-                fill: var(--mdc-theme-text-hint-on-background);
-                display: grid;
-                justify-items: center;
-                font-size: 14px;
-                grid-row-gap: 8px;
-            }
-
-            a.active {
-                color: var(--mdc-theme-text-primary-on-background); 
-                fill: var(--mdc-theme-text-primary-on-background);
-            }
-        }
-    }
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 main {
@@ -735,14 +709,7 @@ section#login {
         padding : 0;
     }
 
-    #page {
-        display: grid;
-        grid-template-rows: 1fr auto;
-        grid-row-gap: 44px;
-        padding-top: 24px;
-    }
-  
-    #rail-navigation {
+    .mdc-drawer {
         display: none;
     }
 
@@ -770,15 +737,8 @@ section#login {
     main {
         padding : 0;
     }
-
-    #page {
-        display: grid;
-        grid-template-rows: 1fr auto;
-        grid-row-gap: 44px;
-        padding-top: 24px;
-    }
     
-    #rail-navigation {
+    .mdc-drawer {
         display: none;
     }
 
