@@ -4146,9 +4146,9 @@ section#login {
 */
 @media (min-width: 481px) and (max-width: 767px) {
   .mdc-top-app-bar__title {
-    text-align: center; }
-  main {
-    padding: 0; }
+    text-align: center;
+    padding-right: 48px;
+    padding-left: 0; }
   .mdc-drawer {
     display: none; }
   .mdc-fab {
@@ -4165,9 +4165,9 @@ section#login {
   */
 @media (min-width: 320px) and (max-width: 480px) {
   .mdc-top-app-bar__title {
-    text-align: center; }
-  main {
-    padding: 0; }
+    text-align: center;
+    padding-right: 48px;
+    padding-left: 0; }
   .mdc-drawer {
     display: none; }
   .mdc-fab {
