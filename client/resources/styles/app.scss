@@ -459,11 +459,11 @@ body {
 }
 
 main {
-    padding: 0 168px 32px 16px;
     overflow: auto;
     box-sizing: border-box;
     width: 100%;
     z-index: 2;
+    padding-top: 16px;
 }
 
 // lists
@@ -629,7 +629,6 @@ section#login {
 .mdc-top-app-bar__title {
     width: 100%;
     font-size: 0.785rem;
-    text-align: center;
     color: var(--mdc-theme-text-secondary-on-background);
 }
 
@@ -705,6 +704,10 @@ section#login {
 
 @media (min-width: 481px) and (max-width: 767px) {
 
+    .mdc-top-app-bar__title {
+        text-align: center;
+    }
+
     main {
         padding : 0;
     }
@@ -733,6 +736,10 @@ section#login {
   */
   
 @media (min-width: 320px) and (max-width: 480px) {
+
+    .mdc-top-app-bar__title {
+        text-align: center;
+    }
 
     main {
         padding : 0;

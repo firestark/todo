@@ -10,23 +10,24 @@
 
 @section ( 'page' )
     <div id="app">
-        <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
-            <div class="mdc-top-app-bar__row">
-                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                    @yield ( 'navigation' )
-                    
-                    <span class="mdc-top-app-bar__title">
-                        @yield ( 'title' )
-                    </span>
-                </section>
+        <div></div>
+        <div id="page">
+            <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+                <div class="mdc-top-app-bar__row">
+                    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                        @yield ( 'navigation' )
+                        
+                        <span class="mdc-top-app-bar__title">
+                            @yield ( 'title' )
+                        </span>
+                    </section>
 
-                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">                
-                    
-                </section>
-            </div>
-        </header>
+                    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">                
+                        
+                    </section>
+                </div>
+            </header>
 
-        <div id="page">            
             <main>
                 @yield ( 'content' )
             </main>
