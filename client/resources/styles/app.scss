@@ -162,7 +162,6 @@ $mdc-typography-font-family: "Metropolis", unquote("sans-serif");
     @include mdc-drawer-item-activated-text-ink-color(#d81b60)
 }
 
-
 .mdc-text-field {
     @include mdc-text-field-ink-color(var(--mdc-theme-text-primary-on-background, #343434));
     @include mdc-text-field-label-color(var(--mdc-theme-text-primary-on-background, #343434));
@@ -219,7 +218,14 @@ html, body {
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: transparent;
+    background-color: var(--mdc-theme-background, #fff);
+    color: var(--mdc-theme-text-primary-on-background, #000);
 }
+
+body {
+    overflow: hidden;
+}
+
 
 a {
     text-decoration: none;
@@ -254,23 +260,12 @@ input:-webkit-autofill:active  {
     border-bottom-color: #0392FF !important;
 }
 
-fieldset {
-    border: 0 none;
-    outline: 0;
-    padding: 0;
-    margin: 0;
-}
-
 .mdc-list-item__meta {
     fill: var(--mdc-theme-text-hint-on-background, rgba(0, 0, 0, 0.38));
 }
 
 .mdc-list-item__graphic {
     position: relative;
-}
-
-.star {
-    fill: #fdd835;
 }
 
 .mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__icon {
@@ -412,15 +407,6 @@ fieldset {
     } 
 }
 
-html, body {
-    background-color: var(--mdc-theme-background, #fff);
-    color: var(--mdc-theme-text-primary-on-background, #000);
-}
-
-body {
-    overflow: hidden;
-}
-
 .mdc-top-app-bar {
     @include mdc-top-app-bar-ink-color(var(--mdc-theme-text-primary-on-background));      
     
@@ -430,7 +416,6 @@ body {
 
 :root[data-theme="light"] {
     .mdc-top-app-bar {
-        
         @include mdc-top-app-bar-icon-ink-color(#000);
     }
 }
@@ -488,24 +473,6 @@ main {
     background-color: var(--mdc-theme-text-primary-on-background);
 }
 
-.overdue {
-    color: var(--mdc-theme-error, #f44336);
-    fill: var(--mdc-theme-error, #f44336);
-}
-
-.mdc-list-item__graphic.overdue::before {
-    background-color: var(--mdc-theme-error);
-}
-
-.completed {
-    color: #1F8D3E;
-    fill: #1F8D3E;
-}
-
-.mdc-list-item__graphic.completed::before {
-    background-color: #1F8D3E;
-}
-
 .mdc-list--linked:not(.mdc-list--avatar-list) a:first-child {
     align-items: center;
     width: 100%;
@@ -544,70 +511,6 @@ form > *:not(:last-of-type) {
     height: 100px;
 }
 
-#title-and-due {
-    display: grid;
-    grid-template-columns: 323px 232px;
-    grid-column-gap: 24px;
-}
-
-// login page
-
-section#login {
-    max-width: 480px;
-    margin: auto;
-    padding: 32px;
-    margin-top: 32px;
-    position: relative;
-    z-index: 1;
-    box-sizing: border-box;
-
-    form {
-        display: grid;
-    }
-
-    button[type='submit'] {
-        margin-top: 32px;
-        width: 140px;
-        justify-self: end;
-        border-radius: 18px;
-    }
-}
-
-#triangle {
-    background: linear-gradient(to right, #94103e, #db004d);
-    display: block;
-    height: 1400px;
-    left: 0;
-    top: 50%;
-    position: absolute;
-    width: 100%;
-    z-index: 0;
-    transform: skewY(36deg);
-    transform-origin: bottom left;
-}
-
-#triangle2 {
-    background: linear-gradient(to right, #94103e, #db004d);
-    display: block;
-    height: 1400px;
-    right: 0;
-    top: -1401px;
-    position: absolute;
-    width: 60%;
-    z-index: 0;
-    transform: skewY(-147deg);
-    transform-origin: bottom left;
-}
-
-#login-theme-switcher {
-    position: absolute;
-    right: 24px;
-    top: 16px;
-    color: var(--mdc-theme-text-primary-on-background);
-    fill: var(--mdc-theme-text-primary-on-background);
-    z-index: 1;
-}
-
 .mdc-tab-indicator {
     left: auto;
     width: 50%;
@@ -631,7 +534,6 @@ section#login {
     font-size: 0.785rem;
     color: var(--mdc-theme-text-secondary-on-background);
 }
-
 
 #bottom-navigation {
     display: none;
@@ -758,9 +660,6 @@ section#login {
         width: 100%;
     }
 }
-
-
-
   
 .mdc-bottom-app-bar {
     color: var(--mdc-theme-on-surface);
@@ -860,4 +759,3 @@ section#login {
     cursor: pointer;
     opacity: 0.6;
 }
-  
