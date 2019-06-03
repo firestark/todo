@@ -2,7 +2,7 @@
 
 use Jenssegers\Blade\Blade;
 
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/config.php';
 
 $app = new firestark\app;
