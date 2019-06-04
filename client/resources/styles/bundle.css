@@ -4065,7 +4065,7 @@ svg.mdc-button__icon {
   font-size: 6rem;
   line-height: 6rem;
   font-weight: 300;
-  letter-spacing: -0.01562em;
+  letter-spacing: -0.01563em;
   text-decoration: inherit;
   text-transform: inherit; }
 
@@ -4456,6 +4456,13 @@ input:-webkit-autofill:active {
   :root[data-theme="dark"] .mdc-top-app-bar .mdc-top-app-bar__action-item.mdc-ripple-upgraded,
   :root[data-theme="dark"] .mdc-top-app-bar .mdc-top-app-bar__navigation-icon.mdc-ripple-upgraded {
     --mdc-ripple-fg-opacity: 0.24; }
+
+#logo {
+  height: 64px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 8px; }
 
 #app {
   overflow: hidden;

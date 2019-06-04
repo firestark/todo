@@ -54,20 +54,40 @@
         
         <div id="page">
             <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+                <div style="position: absolute; left: 0; right: 0; text-align: center;">
+                    <svg id="logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 183 354" style="enable-background:new 0 0 183 354;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0{fill:#E91E63;}
+                        </style>
+                        <title>logo_pink</title>
+                        <path class="st0" d="M117.1,21.5c26.7,24.8,28.6,64.8,6.4,88.6c-11.5,12.3-24.2,23.6-32.4,38.6c-13.2,24.1-10.5,48.8-2.6,73.6
+                            c1.4,4.5,3.7,4.4,6.2,0.9c15.6-20.9,35.4-38,51.5-58.5c16.8-21.3,21.9-45.1,15.6-71.4c-0.3-1.3-0.2-2.8,0.5-4
+                            c11.1,17.6,15,36.9,13.3,57.4c-3.2,38.9-24.3,68.6-49.4,96.3c-6.8,7.5-13.7,15-20.1,22.8c-16.2,19.7-28.6,41-26.5,68.4
+                            c-1.7-0.4-2.9-0.4-3.4-0.9c-20.2-25.7-36.3-53.6-46.1-84.9c-10.5-33.9-3.5-65.3,13.7-95.2c11.6-20.3,26.2-38.5,40.4-56.9
+                            c3.7-4.8,7.5-9.6,11-14.5C107.6,64.4,120.1,47.1,117.1,21.5z"/>
+                        <path class="st0" d="M170.3,200.8c3.2,32.9-1.4,63.5-23.8,88.9c-10.5,11.8-21.9,22.9-34.1,33c-8.8,7.4-16.7,15.5-20.7,27.3
+                            c-8.3-15.4-5-41.9,6.8-59.9c6.9-10.5,15.3-19.7,23.8-28.8C139.7,242.4,159.8,225.6,170.3,200.8z"/>
+                        <path class="st0" d="M102.4,8.3c7.9,11.8,7.4,24,3.5,36.5c-6.1,19.5-18.9,34.9-31.8,50c-24.4,28.5-48.4,57.3-60,94
+                            c-0.3,0.9-1.2,1.5-2.8,3.4c-2.9-9.7-2-18.5-0.7-27.2c4.7-31.3,21.3-56.4,41.7-79.5c6.9-7.8,14-15.6,21.2-23.1
+                            C88.4,47.2,100.8,30.9,102.4,8.3z"/>
+                        <path class="st0" d="M99,182c0.2-16.9,5.8-31.6,17-44.8c11.7-13.8,26.3-25.2,35.3-41.6c3,18.3,0,35.2-12.3,49.3
+                            c-11.8,13.4-24.6,25.8-37,38.6L99,182z"/>
+                    </svg>
+                    <h1 class="mdc-typography--headline6" style="margin-top: 24px;">Todo</h1>
+                </div>
                 <div class="mdc-top-app-bar__row">
                     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                        @yield ( 'navigation' )
-                        
-                        <span class="mdc-top-app-bar__title">
-                            @yield ( 'title' )
-                        </span>
-                    </section>
+                        @yield ( 'navigation' )                        
+                    </section>                    
 
                     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">                
                         
                         @yield ( 'top-app-bar--actions' )
 
                     </section>
+                </div>
+                <div class="mdc-top-app-bar__row">
                 </div>
             </header>
 

@@ -441,6 +441,14 @@ input:-webkit-autofill:active  {
     }
 }
 
+#logo {
+    height: 64px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 8px;
+}
+
 #app {
     overflow: hidden;
     height: 100vh;
