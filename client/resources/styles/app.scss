@@ -159,7 +159,7 @@ $mdc-typography-font-family: "Metropolis", unquote("sans-serif");
 
 .mdc-drawer {
     @include mdc-drawer-item-activated-icon-ink-color(#d81b60);
-    @include mdc-drawer-item-activated-text-ink-color(#d81b60)
+    @include mdc-drawer-item-activated-text-ink-color(#d81b60);
 }
 
 .mdc-text-field {
@@ -759,7 +759,7 @@ form > *:not(:last-of-type) {
     justify-content: center;
     box-sizing: border-box;
     width: 56px;
-    height: 56px;
+        height: 56px;
     padding: 16px;
     border: none;
     outline: none;

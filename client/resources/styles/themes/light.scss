@@ -33,6 +33,6 @@
     }
 
     .mdc-drawer {
-        @include mdc-drawer-fill-color-accessible(#fff);
+        @include mdc-drawer-surface-fill-color(#fff);
     }
 }
