@@ -157,6 +157,10 @@ $mdc-typography-font-family: "Metropolis", unquote("sans-serif");
 @import "@material/top-app-bar/mdc-top-app-bar";
 @import "@material/typography/mdc-typography";
 
+.mdc-snackbar--leading {
+    left: 272px;
+}
+
 .mdc-drawer {
     @include mdc-drawer-item-activated-icon-ink-color(#d81b60);
     @include mdc-drawer-item-activated-text-ink-color(#d81b60);
@@ -617,6 +621,10 @@ form > *:not(:last-of-type) {
 
 @media (min-width: 481px) and (max-width: 767px) {
 
+    .mdc-snackbar {
+        bottom: 138px;
+    }
+
     .mdc-top-app-bar__title {
         text-align: center;
         padding-right: 48px;
@@ -647,6 +655,10 @@ form > *:not(:last-of-type) {
   */
   
 @media (min-width: 320px) and (max-width: 480px) {
+
+    .mdc-snackbar {
+        bottom: 138px;
+    }
 
     .mdc-top-app-bar__title {
         text-align: center;

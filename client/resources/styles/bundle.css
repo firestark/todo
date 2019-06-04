@@ -4201,6 +4201,9 @@ svg.mdc-button__icon {
   text-decoration: none;
   text-transform: uppercase; }
 
+.mdc-snackbar--leading {
+  left: 272px; }
+
 .mdc-drawer .mdc-list-item--activated .mdc-list-item__graphic {
   color: #d81b60; }
 
@@ -4582,6 +4585,8 @@ form > *:not(:last-of-type) {
   ##Screen = B/w 481px to 767px
 */
 @media (min-width: 481px) and (max-width: 767px) {
+  .mdc-snackbar {
+    bottom: 138px; }
   .mdc-top-app-bar__title {
     text-align: center;
     padding-right: 48px;
@@ -4601,6 +4606,8 @@ form > *:not(:last-of-type) {
     ##Screen = B/w 320px to 479px
   */
 @media (min-width: 320px) and (max-width: 480px) {
+  .mdc-snackbar {
+    bottom: 138px; }
   .mdc-top-app-bar__title {
     text-align: center;
     padding-right: 48px;

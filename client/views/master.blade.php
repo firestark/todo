@@ -23,7 +23,7 @@
     @yield ( 'page' )
 
     @if ( session::has ( 'message' ) )
-        <div class="mdc-snackbar" style="bottom: 138px;">
+        <div class="mdc-snackbar mdc-snackbar--leading">
             <div class="mdc-snackbar__surface">
                 <div class="mdc-snackbar__label"
                     role="status"
