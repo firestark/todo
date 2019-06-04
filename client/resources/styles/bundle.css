@@ -4586,7 +4586,8 @@ form > *:not(:last-of-type) {
 */
 @media (min-width: 481px) and (max-width: 767px) {
   .mdc-snackbar {
-    bottom: 138px; }
+    bottom: 138px;
+    left: 0; }
   .mdc-top-app-bar__title {
     text-align: center;
     padding-right: 48px;
@@ -4607,7 +4608,8 @@ form > *:not(:last-of-type) {
   */
 @media (min-width: 320px) and (max-width: 480px) {
   .mdc-snackbar {
-    bottom: 138px; }
+    bottom: 138px;
+    left: 0; }
   .mdc-top-app-bar__title {
     text-align: center;
     padding-right: 48px;
