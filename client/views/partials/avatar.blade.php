@@ -1,4 +1,4 @@
-<div id="demo-menu" class="mdc-menu-surface--anchor" style="position: relative; top: 16px; right: 16px;">
+<div id="demo-menu" class="mdc-menu-surface--anchor" style="position: relative; right: 16px;">
     <button id="menuButton" class="mdc-top-app-bar__action-item" style="width: 28px; height: 28px; padding: 0; border-radius: 50%;">
         <img src="/resources/images/avatar.png" style="width: 100%; height: 100%; border-radius: 50%;">
     </button>

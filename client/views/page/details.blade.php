@@ -22,9 +22,11 @@
                         </span>
                     </section>
 
-                    {{-- <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">                
+                    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">                
                         
-                    </section> --}}
+                        @yield ( 'top-app-bar--actions' )
+                        @include ( 'partials.avatar' )
+                    </section>
                 </div>
             </header>
 
