@@ -423,22 +423,10 @@ input:-webkit-autofill:active  {
 }
 
 .mdc-top-app-bar {
-    @include mdc-top-app-bar-ink-color(var(--mdc-theme-text-primary-on-background));      
+    @include mdc-top-app-bar-ink-color(var(--mdc-theme-text-primary-on-background));    
     
     position: relative;
     background: transparent;
-}
-
-:root[data-theme="light"] {
-    .mdc-top-app-bar {
-        @include mdc-top-app-bar-icon-ink-color(#000);
-    }
-}
-
-:root[data-theme="dark"] {
-    .mdc-top-app-bar {        
-        @include mdc-top-app-bar-icon-ink-color(#f2f2f2);
-    }
 }
 
 #logo {

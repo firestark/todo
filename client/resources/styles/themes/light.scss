@@ -1,5 +1,6 @@
 @import "@material/drawer/mdc-drawer";
 @import "@material/tab/mdc-tab";
+@import "@material/top-app-bar/mdc-top-app-bar";
 
 :root[data-theme="light"] {
     --mdc-theme-primary: #d81b60;
@@ -34,5 +35,9 @@
 
     .mdc-drawer {
         @include mdc-drawer-surface-fill-color(#fff);
+    }
+
+    .mdc-top-app-bar {
+        @include mdc-top-app-bar-icon-ink-color(rgba(0, 0, 0, 0.54));
     }
 }
