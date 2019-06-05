@@ -4458,7 +4458,7 @@ input:-webkit-autofill:active {
     --mdc-ripple-fg-opacity: 0.24; }
 
 #logo {
-  height: 64px;
+  height: 56px;
   display: block;
   margin: 0 auto;
   position: relative;
