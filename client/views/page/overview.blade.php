@@ -74,7 +74,7 @@
                         <path class="st0" d="M99,182c0.2-16.9,5.8-31.6,17-44.8c11.7-13.8,26.3-25.2,35.3-41.6c3,18.3,0,35.2-12.3,49.3
                             c-11.8,13.4-24.6,25.8-37,38.6L99,182z"/>
                     </svg>
-                    <h1 class="mdc-typography--headline6" style="margin-top: 32px; font-family: 'Metropolis Semi', sans-serif; letter-spacing: -0.1px;">Todo</h1>
+                    <h1 class="mdc-typography--headline6" style="margin-top: 32px; font-family: 'Metropolis Semi', sans-serif; letter-spacing: -0.1px;">DoStark</h1>
                 </div>
                 <div class="mdc-top-app-bar__row">
                     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
