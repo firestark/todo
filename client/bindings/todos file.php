@@ -1,6 +1,11 @@
 <?php
 
-app::share ( 'todos file', function ( )
+use firestark\user\credentials;
+
+app::share ( 'todos file', function ( $app )
 {
-    return __DIR__ . '/../storage/db/files/todos.data';
+    $directory = __DIR__ . '/../storage/db/files/' . md5 ( $app [ credentials::class ]->username );
+    $file = 'todos.data';
+    return $directory . '/' . $file;
 } );
+

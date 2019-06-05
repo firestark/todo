@@ -17,8 +17,8 @@ class kernel
 
     function handle ( request $request ) : \http\response
     {
-        // if ( ! $this->allows ( $request ) )
-        //     return $this->deny ( );
+        if ( ! $this->allows ( $request ) )
+            return $this->deny ( );
 
         list ( $task, $arguments ) = $this->app [ 'dispatcher' ]->match ( $request->method, $request->uri );
         
@@ -32,8 +32,8 @@ class kernel
 
     private function allows ( request $request ) : bool
     {
-        $token = $this->app [ 'guard' ]->getToken ( );
-        return ( $this->app [ 'guard' ]->allows ( $request, $token ) );
+        $token = $this->app [ guard::class ]->getToken ( );
+        return ( $this->app [ guard::class ]->allows ( $request, $token ) );
     }
 
     private function deny ( ) : \http\response

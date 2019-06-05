@@ -2,6 +2,8 @@
 
 namespace firestark;
 
+use firestark\user\credentials;
+
 abstract class guard
 {
     /**

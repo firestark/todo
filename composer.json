@@ -19,6 +19,7 @@
 		}
 	],
 	"require": {
+		"firebase/php-jwt": "dev-master",
 		"firestark/ioc": "*",
 		"firestark/http": "*",
 		"firestark/support": "*",

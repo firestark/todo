@@ -1,7 +1,7 @@
 <?php
 
 use Firebase\JWT\JWT;
-use firestark\credentials;
+use firestark\user\credentials;
 use firestark\guard;
 use firestark\session;
 
