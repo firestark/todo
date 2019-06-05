@@ -19,4 +19,4 @@ Catch up on phone calls, emails, sign paperwork etc. Administrative stuff.
 Free days
 No work
 
-- Morning first our is investing in yourself
+- Morning first hour is investing in yourself
