@@ -5137,9 +5137,9 @@ form > *:not(:last-of-type) {
   border-radius: 3px 3px 0 0; }
 
 .mdc-top-app-bar__title {
-  width: 100%;
   font-size: 0.785rem;
-  color: var(--mdc-theme-text-secondary-on-background); }
+  color: var(--mdc-theme-text-secondary-on-background);
+  padding-left: 32px; }
 
 #bottom-navigation {
   display: none;
@@ -5188,10 +5188,6 @@ form > *:not(:last-of-type) {
   .mdc-snackbar {
     bottom: 138px;
     left: 0; }
-  .mdc-top-app-bar__title {
-    text-align: center;
-    padding-right: 48px;
-    padding-left: 0; }
   .mdc-drawer {
     display: none; }
   .mdc-fab {
@@ -5202,7 +5198,15 @@ form > *:not(:last-of-type) {
   .mdc-text-field {
     width: 100%; }
   section#login {
-    align-self: end; } }
+    align-self: end; }
+  #title-center {
+    padding: 0;
+    align-self: center;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    pointer-events: none; } }
 
 /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -5212,10 +5216,6 @@ form > *:not(:last-of-type) {
   .mdc-snackbar {
     bottom: 138px;
     left: 0; }
-  .mdc-top-app-bar__title {
-    text-align: center;
-    padding-right: 48px;
-    padding-left: 0; }
   .mdc-drawer {
     display: none; }
   .mdc-fab {
@@ -5226,7 +5226,15 @@ form > *:not(:last-of-type) {
   .mdc-text-field {
     width: 100%; }
   section#login {
-    align-self: end; } }
+    align-self: end; }
+  #title-center {
+    padding: 0;
+    align-self: center;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    pointer-events: none; } }
 
 .mdc-bottom-app-bar {
   color: var(--mdc-theme-on-surface);

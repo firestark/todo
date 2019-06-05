@@ -545,9 +545,9 @@ form > *:not(:last-of-type) {
 }
 
 .mdc-top-app-bar__title {
-    width: 100%;
     font-size: 0.785rem;
     color: var(--mdc-theme-text-secondary-on-background);
+    padding-left: 32px;
 }
 
 #bottom-navigation {
@@ -626,12 +626,6 @@ form > *:not(:last-of-type) {
         left: 0;
     }
 
-    .mdc-top-app-bar__title {
-        text-align: center;
-        padding-right: 48px;
-        padding-left: 0;
-    }
-
     .mdc-drawer {
         display: none;
     }
@@ -652,6 +646,16 @@ form > *:not(:last-of-type) {
     section#login {
         align-self: end;
     }
+
+    #title-center {
+        padding: 0; 
+        align-self: center; 
+        position: absolute; 
+        text-align: center; 
+        left: 0; 
+        right: 0;
+        pointer-events: none;
+    }
 }
   
   /* 
@@ -664,12 +668,6 @@ form > *:not(:last-of-type) {
     .mdc-snackbar {
         bottom: 138px;
         left: 0;
-    }
-
-    .mdc-top-app-bar__title {
-        text-align: center;
-        padding-right: 48px;
-        padding-left: 0;
     }
     
     .mdc-drawer {
@@ -691,6 +689,16 @@ form > *:not(:last-of-type) {
 
     section#login {
         align-self: end;
+    }
+
+    #title-center {
+        padding: 0; 
+        align-self: center; 
+        position: absolute; 
+        text-align: center; 
+        left: 0; 
+        right: 0;
+        pointer-events: none;
     }
 }
   

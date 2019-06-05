@@ -15,11 +15,10 @@
             <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
                 <div class="mdc-top-app-bar__row">
                     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                        @yield ( 'navigation' )
-                        
-                        <span class="mdc-top-app-bar__title">
+                        @yield ( 'navigation' )    
+                        <span class="mdc-top-app-bar__title" id="title-center">
                             @yield ( 'title' )
-                        </span>
+                        </span>                    
                     </section>
 
                     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">                
