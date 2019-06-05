@@ -5197,7 +5197,9 @@ form > *:not(:last-of-type) {
   #bottom-navigation {
     display: block; }
   .mdc-text-field {
-    width: 100%; } }
+    width: 100%; }
+  section#login {
+    align-self: end; } }
 
 /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -5219,7 +5221,9 @@ form > *:not(:last-of-type) {
   #bottom-navigation {
     display: block; }
   .mdc-text-field {
-    width: 100%; } }
+    width: 100%; }
+  section#login {
+    align-self: end; } }
 
 .mdc-bottom-app-bar {
   color: var(--mdc-theme-on-surface);
@@ -5310,6 +5314,8 @@ form > *:not(:last-of-type) {
   opacity: 0.6; }
 
 section#login {
+  width: 100%;
+  margin: 0 auto;
   max-width: 480px;
   padding: 32px 32px 104px;
   position: relative;
