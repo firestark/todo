@@ -4843,6 +4843,9 @@ svg.mdc-button__icon {
   text-decoration: none;
   text-transform: uppercase; }
 
+#avatar-menu {
+  top: 40px !important; }
+
 .mdc-snackbar--leading {
   left: 272px; }
 
