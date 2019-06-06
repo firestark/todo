@@ -2,7 +2,7 @@
 	"name": "firestark/todo",
 	"type": "project",
 	"version": "0.0.1",
-	"description": "PHP7+ NON-MVC framework focused on the business logic.",
+	"description": "Todo application to showcase the firestark framework.",
 	"keywords": [
 		"framework",
 		"non-mvc",
