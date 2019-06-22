@@ -39,8 +39,6 @@ class kernel
     private function deny ( ) : \http\response
     {
         $this->app [ 'session' ]->set ( 'intended', $this->app [ 'request' ]->uri ( ) );
-        $response = $this->app->call ( $this->app [ 'statuses' ]->match ( 0 ), [ ] );
-        $response [ 'X-Firestark-Status' ] = 0;
-        return $response;
+        return $this->app [ 'redirector' ]->to ( '/login' );
     }
 }
