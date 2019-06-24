@@ -7,7 +7,7 @@ route::post ( '/login', function ( )
 {
     $user = app::make ( user::class );
     
-    if ( ! app::make ( manager::class )->has ( $user ) )
+    if ( ! users::has ( $user ) )
     {
         session::flash ( 'message', 'Invalid credentials' );
         return redirect::back ( );

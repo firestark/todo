@@ -7,15 +7,14 @@ use firestark\user\manager;
 route::post ( '/register', function ( )
 {
     $user = app::make ( user::class );
-    $userManager = app::make ( manager::class );
 
-    if ( $userManager->registered ( $user->credentials->username ) )
+    if ( users::registered ( $user->credentials->username ) )
     {
         session::flash ( 'message', 'Username already exists.' );
         return redirect::back ( );
     }
 
-    $userManager->register ( $user );
+    users::register ( $user );
     createfiles ( $user->credentials );
 
     guard::stamp ( $user->credentials );
