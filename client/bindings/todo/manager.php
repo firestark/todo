@@ -1,6 +1,6 @@
 <?php
 
-app::bind ( todo\manager::class, function ( $app )
+app::share ( todo\manager::class, function ( $app )
 {
     return new flatfileTodoManager ( 
         $app [ 'todos file' ],
